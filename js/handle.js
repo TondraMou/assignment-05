@@ -1,4 +1,3 @@
-
 const historyBtn = document.getElementById('history-btn');
 const donationBtn = document.getElementById('donation-btn');
 

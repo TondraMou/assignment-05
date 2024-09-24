@@ -36,3 +36,15 @@ function history(inputAmount,locationTitle){
     `;
     document.getElementById('history-div').appendChild(div);
 }
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('nav-ber');
+    const navberInnerDiv = document.getElementById("navber-inner-div");
+    if (window.scrollY > 50) {
+      header.classList.add('blurred');
+      navberInnerDiv.classList.remove("bg-[#F9F7F3]");
+    } else {
+      header.classList.remove('blurred');
+      navberInnerDiv.classList.add("bg-[#F9F7F3]");
+    }
+  });

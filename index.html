@@ -14,15 +14,15 @@
         .font-lexend{
             font-family: "Lexend", sans-serif;
         }
-        .btn-container{
-            backdrop-filter: blur(1px);
-            background-color: rgba(255, 255, 255, 0.438);
+        .blurred {
+            backdrop-filter: blur(20px);
+            transition: backdrop-filter 0.3s ease;
         }
     </style>
 </head>
 <body class="font-lexend">
-    <header class="sticky top-0 z-50">
-         <div class="bg-[#F9F7F3]">
+    <header id="nav-ber" class="sticky top-0 z-50">
+         <div id="navber-inner-div" class="bg-[#F9F7F3]">
             <nav class="w-4/5 flex md:flex-row flex-col items-center mx-auto md:justify-between py-4">
                 <div><a href="blog.html" class="md:px-4 md:py-2 px-2 py-1 md:text-xl rounded-xl font-bold bg-[#B4F461] text-black border-none">Blog</a></div>
                 <div class="flex gap-4 items-center">
@@ -36,7 +36,7 @@
                 </div>
             </nav>
          </div>
-         <div class="btn-container  mx-auto flex gap-4 justify-center py-5 border-b-2 border-[#11111128]">
+         <div class="mx-auto flex gap-4 justify-center py-5 border-b-2 border-[#11111128]">
             <div><button id="donation-btn" class="text-black font-bold bg-[#B4F461]  rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]  text-base md:text-xl">Donation</button></div>
             <div><button id="history-btn" class="border-2 border-[#111111B3] text-[#111111B3] font-bold text-base md:text-xl rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]">History</button></div>
          </div>
